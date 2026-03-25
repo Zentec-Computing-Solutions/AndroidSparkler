@@ -27,8 +27,7 @@ def main():
 
     def refresh():
         print("[*] Refreshing app list...")
-        new_known, new_suggested, new_all_other = scan()
-        app.refresh(new_known, new_suggested, new_all_other)
+        return scan()
 
     app = AppUI(known, suggested, all_other, uninstall, add_to_db, refresh)
     app.mainloop()

@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: "Google Sans Flex", "Segoe UI", sans-serif;
+    background: var(--mdui-color-surface);
+    color: var(--mdui-color-on-surface);
+}
+
+.page {
+    max-width: 888px;
+    margin: 0 auto;
+    padding: 16px 16px 24px;
+}
+
+.toolbar,
+.panel,
+.no-data {
+    width: 100%;
+    margin-bottom: -8px;
+}
+
+.toolbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px;
+}
+
+.app-title {
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.app-subtitle {
+    color: var(--mdui-color-on-surface-variant);
+    font-size: 0.92rem;
+}
+
+.panel {
+    margin-top: 16px;
+}
+
+.panel-content {
+    padding: 16px;
+}
+
+.panel-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.panel-title {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.other-content {
+    padding: 16px;
+}
+
+.other-header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding-right: 8px;
+}
+
+.other-header-side {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+
+.other-header-left {
+    justify-content: flex-start;
+}
+
+.other-header-right {
+    justify-content: flex-end;
+}
+
+.other-header-center {
+    display: flex;
+    justify-content: center;
+}
+
+.other-search {
+    width: 250px;
+    max-width: 100%;
+}
+
+.other-inner {
+    padding: 16px 0 0 0;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 16px;
+    align-items: center;
+    padding: 16px 0;
+    border-top: 1px solid var(--mdui-color-outline-variant);
+}
+
+.row:first-child {
+    border-top: 0;
+}
+
+.pkg {
+    word-break: break-all;
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.no-data {
+    margin-top: 30px;
+}
+
+.empty-message,
+.load-error {
+    padding: 24px 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+@media (max-width: 740px) {
+    .other-header {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding-right: 0;
+    }
+
+    .other-header-left,
+    .other-header-right,
+    .other-header-center {
+        justify-content: flex-start;
+    }
+
+    .other-search {
+        width: 100%;
+    }
+
+    .row {
+        grid-template-columns: 1fr;
+    }
+
+    .actions {
+        justify-content: flex-start;
+    }
+}

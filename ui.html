@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Android App Cleaner</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css" />
+        <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@8..144,300..800&display=swap"
+        />
+        <link rel="stylesheet" href="ui.css" />
+    </head>
+
+    <body>
+        <div class="page">
+            <mdui-card variant="filled" class="toolbar">
+                <div class="toolbar-inner">
+                    <div>
+                        <div class="app-title">Android App Cleaner</div>
+                        <div class="app-subtitle">
+                            Scan, review, and remove suspicious apps.
+                        </div>
+                    </div>
+                    <mdui-button-icon
+                        id="refreshBtn"
+                        icon="refresh"
+                        variant="filled"
+                    ></mdui-button-icon>
+                </div>
+            </mdui-card>
+
+            <div id="content"></div>
+        </div>
+        <script src="ui.js"></script>
+    </body>
+</html>
