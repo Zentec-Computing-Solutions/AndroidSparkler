@@ -68,6 +68,7 @@ class _AppBridge:
         return self.get_state()
 
     def mark_bad(self, pkg):
+        self.uninstall_callback(pkg)
         self.add_to_db_callback(pkg)
         self.all_other.discard(pkg)
         self.known_bad.add(pkg)
